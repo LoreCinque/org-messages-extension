@@ -1,0 +1,25 @@
+{
+  "name": "org-messages-extension",
+  "version": "1.0.0",
+  "description": "Chrome Extension for Org Messages",
+  "scripts": {
+    "build:tailwind": "npx tailwindcss -i ./popup/popup.css -o ./dist/tailwind.output.css --minify",
+    "build": "npm run build:tailwind && webpack --mode production"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tailwindcss": "^3.4.13"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^9.0.0",
+    "css-loader": "^6.0.0",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Org Messages Extension",
+  "version": "1.0",
+  "description": "Displays organization-wide messages from admin to users.",
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_icon": "assets/icons/64.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "alarms"],
+  "icons": {
+    "64": "assets/icons/64.png",
+    "128": "assets/icons/128.png",
+    "256": "assets/icons/256.png"
+  }
+}
